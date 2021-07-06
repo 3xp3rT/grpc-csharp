@@ -8,9 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Dummy {
-  public static partial class dummyService
+  public static partial class DummyService
   {
-    static readonly string __ServiceName = "dummy.dummyService";
+    static readonly string __ServiceName = "dummy.DummyService";
 
 
     /// <summary>Service descriptor</summary>
@@ -19,45 +19,45 @@ namespace Dummy {
       get { return global::Dummy.DummyReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of dummyService</summary>
-    [grpc::BindServiceMethod(typeof(dummyService), "BindService")]
-    public abstract partial class dummyServiceBase
+    /// <summary>Base class for server-side implementations of DummyService</summary>
+    [grpc::BindServiceMethod(typeof(DummyService), "BindService")]
+    public abstract partial class DummyServiceBase
     {
     }
 
-    /// <summary>Client for dummyService</summary>
-    public partial class dummyServiceClient : grpc::ClientBase<dummyServiceClient>
+    /// <summary>Client for DummyService</summary>
+    public partial class DummyServiceClient : grpc::ClientBase<DummyServiceClient>
     {
-      /// <summary>Creates a new client for dummyService</summary>
+      /// <summary>Creates a new client for DummyService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public dummyServiceClient(grpc::ChannelBase channel) : base(channel)
+      public DummyServiceClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for dummyService that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for DummyService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public dummyServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public DummyServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected dummyServiceClient() : base()
+      protected DummyServiceClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
-      protected dummyServiceClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected DummyServiceClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override dummyServiceClient NewInstance(ClientBaseConfiguration configuration)
+      protected override DummyServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new dummyServiceClient(configuration);
+        return new DummyServiceClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(dummyServiceBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(DummyServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder().Build();
     }
@@ -66,7 +66,7 @@ namespace Dummy {
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, dummyServiceBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, DummyServiceBase serviceImpl)
     {
     }
 

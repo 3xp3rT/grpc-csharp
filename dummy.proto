@@ -1,4 +1,4 @@
 syntax="proto3";
 package dummy;
-message dummyMessage{}
-service dummyService{}
+message DummyMessage{}
+service DummyService{}

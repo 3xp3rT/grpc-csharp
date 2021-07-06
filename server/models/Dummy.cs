@@ -24,27 +24,27 @@ namespace Dummy {
     static DummyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtkdW1teS5wcm90bxIFZHVtbXkiDgoMZHVtbXlNZXNzYWdlMg4KDGR1bW15",
+            "CgtkdW1teS5wcm90bxIFZHVtbXkiDgoMRHVtbXlNZXNzYWdlMg4KDER1bW15",
             "U2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dummy.dummyMessage), global::Dummy.dummyMessage.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dummy.DummyMessage), global::Dummy.DummyMessage.Parser, null, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class dummyMessage : pb::IMessage<dummyMessage>
+  public sealed partial class DummyMessage : pb::IMessage<DummyMessage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<dummyMessage> _parser = new pb::MessageParser<dummyMessage>(() => new dummyMessage());
+    private static readonly pb::MessageParser<DummyMessage> _parser = new pb::MessageParser<DummyMessage>(() => new DummyMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<dummyMessage> Parser { get { return _parser; } }
+    public static pb::MessageParser<DummyMessage> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -57,29 +57,29 @@ namespace Dummy {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public dummyMessage() {
+    public DummyMessage() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public dummyMessage(dummyMessage other) : this() {
+    public DummyMessage(DummyMessage other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public dummyMessage Clone() {
-      return new dummyMessage(this);
+    public DummyMessage Clone() {
+      return new DummyMessage(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as dummyMessage);
+      return Equals(other as DummyMessage);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(dummyMessage other) {
+    public bool Equals(DummyMessage other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -133,7 +133,7 @@ namespace Dummy {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(dummyMessage other) {
+    public void MergeFrom(DummyMessage other) {
       if (other == null) {
         return;
       }
